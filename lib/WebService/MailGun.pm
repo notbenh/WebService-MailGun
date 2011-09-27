@@ -1,5 +1,5 @@
+package WebService::MailGun;
 use strict;
 use warnings;
-package WebService::MailGun;
-
+use base qw{WebService::MailGun::HTTP};
 1;
