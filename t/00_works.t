@@ -6,6 +6,10 @@ use Test::Most qw{no_plan};
 
 require_ok q{WebService::MailGun};
 can_ok q{WebService::MailGun}, qw{
+  ua
+  api_key
+  servername
+
   send_text
   send_raw
 };
