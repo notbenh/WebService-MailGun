@@ -10,7 +10,7 @@ can_ok q{WebService::MailGun}, qw{
   send_raw
 };
 
-ok $mgun = WebService::MailGun->new( api_key    => $ENV{MailGunAPI}
+ok my $mgun = WebService::MailGun->new( api_key    => $ENV{MailGunAPI}
                                    , servername => $ENV{MailGunSERVICENAME}
                                    );
 
